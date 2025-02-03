@@ -13,9 +13,9 @@ const Footer = () => {
             </div>
             <div className="newslatter col-span-6 sm:my-6">
                 <input type="email" name="email" placeholder="Your Email" id="footerEmal" className='p-4 bg-white rounded-full border-none focus:outline-none w-[85%] sm:w-[70%]'/>
-                <button type="submit" className='bg-default-green hover:bg-default-gold rounded-full text-white font-semibold p-4 w-[25%] -m-16 sm:w-[40%] sm:-m-12'>Subscribe Now</button>
+                <button type="submit" className='bg-default-green hover:bg-default-gold rounded-full text-white font-semibold p-4 w-[25%] -m-16 sm:w-[45%] sm:-m-12 md:w-[40%] lg:w-[35%] lg:-m-24'>Subscribe Now</button>
             </div> 
-            <div className="footerSocialLinks col-span-3 text-right sm:text-center">
+            <div className="footerSocialLinks col-span-3 text-right sm:text-center md:flex">
               <a href="#" className="twiter border border-default-gold px-3 py-2 rounded-full mr-2 sm:inline-block"><FontAwesomeIcon icon={faTwitter}  color='#FFB524' /></a>
               <a href="#" className="twiter border border-default-gold px-3 py-2 rounded-full mr-2 sm:inline-block"><FontAwesomeIcon icon={faYoutube}  color='#FFB524' /></a>
               <a href="#" className="twiter border border-default-gold px-3 py-2 rounded-full mr-2 sm:inline-block"><FontAwesomeIcon icon={faFacebookF} color='#FFB524' /></a>
