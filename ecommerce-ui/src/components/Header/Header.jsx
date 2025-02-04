@@ -9,7 +9,7 @@ const toggleMenu = () =>{
     SetisOpen(!isOpen);
 }
   return (
-    <div className="header-section bg-white pb-2 shadow-2xl">
+    <div className="header-section bg-white pb-2 shadow-2xl sticky top-[-65px] z-50 sm:top-0 transition-all duration-300 ease-in-out">
         <div className='container mx-auto px-4'>
             <div className="topbar bg-default-green p-5 rounded-tl-[100px] rounded-br-[100px] rounded-bl-[40px] rounded-tr-[40px] sm:pt-7 sm:rounded-tl-[100px] sm:rounded-br-[100px] sm:hidden">
                 <div className="topbar-row flex items-center justify-between px-4 sm:block">
@@ -36,7 +36,7 @@ const toggleMenu = () =>{
                             <FontAwesomeIcon icon={faBars} size='2x' color='#81C408'/>
                         </button>
                     </div>
-                    <div className={`p-3 absolute top-20 left-0 w-full bg-white border rounded-md shadow-lg transform transition-all duration-300 ${isOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
+                    <div className={`p-3 absolute top-20 left-0 w-full bg-white border rounded-md shadow-lg transform transition-all duration-300 ${isOpen ? 'scale-100 block' : 'scale-95 hidden'}`}>
                         <ul className='flex space-x-7 capitalize sm:space-x-0 sm:block'>
                             <li className='sm:p-2'><a href="#">Home</a></li>
                             <li className='sm:p-2'><a href="#">Shop</a></li>
@@ -44,8 +44,8 @@ const toggleMenu = () =>{
                                 <li className="group relative sm:p-2'">
                                     <a href="#" className='sm:p-2'>Pages</a>
                                     <ul className="absolute left-0 hidden group-hover:block bg-gray-200 shadow-md max-h-0 group-hover:max-h-40 transition-all duration-300 overflow-hidden p-5 rounded-md ">
-                                        <li className='hover:bg-default-gold hover:text-default-gold'><a href="#" >Cart</a></li>
-                                        <li className='hover:bg-default-gold hover:text-default-gold'><a href="#">Checkout</a></li>
+                                        <li className='hover:bg-default-gold hover:text-default-green'><a href="#" >Cart</a></li>
+                                        <li className='hover:bg-default-gold hover:text-default-green'><a href="#">Checkout</a></li>
                                     </ul>
                                 </li>
                             <li className='sm:p-2'><a href="#">Contact us</a></li>

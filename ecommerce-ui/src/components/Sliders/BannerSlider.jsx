@@ -25,16 +25,18 @@ const BannerSlider = () => {
   }, []);
 
   return (
-    <div className="homebannerslider px-20">
+    <div className="homebannerslider pl-20 sm:p-0 sm:my-6 md:p-0 lg:pl-0">
         <div className="slides">
             <div className="slider">
-                <div className="image-section">
-                    <img src="src/images/Vesitables.jpg" alt="Vesitables" className='rounded-md w-full'/>
+                <div className="image-section bg-default-gold rounded-md relative">
+                    <img src="src/images/Vesitables.jpg" alt="Fruites" className='rounded-md w-full'/>
+                    <a href="#" className="px-4 py-2 text-white text-2xl rounded-md font-semibold absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-gold-gradient">Vesitables</a>
                 </div>
             </div>
             <div className="slider">
-                <div className="image-section">
-                    <img src="src/images/Vesitables.jpg" alt="Vesitables" className='rounded-md w-full'/>
+                <div className="image-section bg-default-gold rounded-md relative">
+                    <img src="src/images/Fruites.png" alt="Fruites" className='rounded-md w-full'/>
+                    <a href="#" className="px-4 py-2 text-white text-2xl rounded-md font-semibold absolute abso top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-gold-gradient">Fruits</a>
                 </div>
             </div>
         </div>

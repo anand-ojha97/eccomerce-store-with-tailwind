@@ -12,8 +12,8 @@ const Footer = () => {
               <span className='text-default-gold text-lg'>Fresh products</span>
             </div>
             <div className="newslatter col-span-6 sm:my-6">
-                <input type="email" name="email" placeholder="Your Email" id="footerEmal" className='p-4 bg-white rounded-full border-none focus:outline-none w-[85%] sm:w-[70%]'/>
-                <button type="submit" className='bg-default-green hover:bg-default-gold rounded-full text-white font-semibold p-4 w-[25%] -m-16 sm:w-[45%] sm:-m-12 md:w-[40%] lg:w-[35%] lg:-m-24'>Subscribe Now</button>
+                <input type="email" name="email" placeholder="Your Email" id="footerEmal" className='p-4 bg-white rounded-full border-none focus:outline-none w-[85%] sm:w-[70%] md:w-[80%]'/>
+                <button type="submit" className='bg-default-green hover:bg-default-gold rounded-full text-white font-semibold p-4 w-[25%] -m-16 sm:w-[45%] sm:-m-12 md:w-[45%] lg:w-[35%] lg:-m-24'>Subscribe Now</button>
             </div> 
             <div className="footerSocialLinks col-span-3 text-right sm:text-center md:flex">
               <a href="#" className="twiter border border-default-gold px-3 py-2 rounded-full mr-2 sm:inline-block"><FontAwesomeIcon icon={faTwitter}  color='#FFB524' /></a>
