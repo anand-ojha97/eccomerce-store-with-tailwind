@@ -1,6 +1,6 @@
 import React from 'react';
-import BannerSlider from '../Sliders/BannerSlider';
-const HomeBanner = () => {
+import HeroSlider from '../Sliders/HeroSlider';
+const HeroBanner = () => {
 
 return (
     <div className="homeBanner bg-[url(images/hero-img.jpg)] py-28 bg-cover bg-center sm:py-12 md:py-10 xl:py-20">
@@ -20,7 +20,7 @@ return (
                         </div> 
                     </div>
                     <div className="slider">
-                        <BannerSlider />
+                        <HeroSlider />
                     </div>
                 </div>
             </div>
@@ -29,4 +29,4 @@ return (
     )
 }
 
-export default HomeBanner
+export default HeroBanner
