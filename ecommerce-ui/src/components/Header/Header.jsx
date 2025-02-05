@@ -28,7 +28,7 @@ const toggleMenu = () =>{
             </div>
             <div className="header flex justify-between items-center py-4">
                 <div className="logo">
-                    <h1 className='font-bold text-4xl text-default-green'>Fruitables</h1>
+                    <h1 className='font-bold text-4xl text-default-green sm:text-3xl'>Fruitables</h1>
                 </div>
                 <div className="menu-item sm:order-2">
                 <div className="toggle-btn">

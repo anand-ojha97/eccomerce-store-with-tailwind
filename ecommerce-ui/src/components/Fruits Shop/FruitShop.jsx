@@ -37,10 +37,10 @@ const FruitShop = () => {
               id: 4,
               title: 'Sourdough Bread',
               category: 'Bakery',
-              price: '$3.49 / loaf',
+              price: '$3.49/loaf',
               weight: '500g',
               description: 'Crusty sourdough bread with a tangy flavor, perfect for sandwiches or toasts.',
-              image: 'src/images/fruite-item-4.jpg'  // Replace with actual image path
+              image: 'src/images/Whole Wheat Bread.jpg'  // Replace with actual image path
             },
             {
               id: 5,
@@ -63,7 +63,7 @@ const FruitShop = () => {
               price: '$3.99 / kg',
               weight: '1 kg',
               description: 'Fresh, leafy spinach, great for salads, sautéing, or adding to smoothies.',
-              image: 'src/images/fruite-item-3.jpg'  // Replace with actual image path
+              image: 'src/images/fruite-item-1.jpg'  // Replace with actual image path
             },
             {
               id: 2,
@@ -109,7 +109,7 @@ const FruitShop = () => {
               price: '$4.99 / loaf',
               weight: '600g',
               description: 'Whole wheat bread, rich in fiber and perfect for making healthy sandwiches.',
-              image: 'src/images/fruite-item-4.jpg'  // Replace with actual image path
+              image: 'src/images/Whole Wheat Bread.jpg'  // Replace with actual image path
             },
             {
               id: 2,
@@ -118,7 +118,7 @@ const FruitShop = () => {
               price: '$1.99 / piece',
               weight: '100g',
               description: 'Flaky, buttery croissants, ideal for breakfast or an afternoon snack.',
-              image: 'src/images/fruite-item-4.jpg'  // Replace with actual image path
+              image: 'src/images/bread.jpg'  // Replace with actual image path
             }
           ]
         }
@@ -136,27 +136,33 @@ const FruitShop = () => {
         <>
             <div className="fruitshop">
                 <div className="container mx-auto px-4">
-                    <div className="grid grid-cols-3 items-center">
+                    <div className="grid grid-cols-3 items-center sm:block">
                         <div className="main-heading">
                             <h2 className='text-4xl font-semibold'>Our Organic Products</h2>
                         </div>
-                        <div className="categories col-span-2">
-                            <div className="category-title grid grid-cols-5 gap-3">
+                        <div className="categories col-span-2 mt-4">
+                            <div className="category-title grid grid-cols-5 gap-3 lg:grid-cols-3 sm:flex sm:justify-center sm:flex-wrap">
                                 {tabs.map((tab,index) => (
-                                    <span key={index} onClick={() => handleTabClick(tab.title)} className='rounded-full px-6 py-2 text-center bg-theme-gray hover:bg-default-gold hover:text-white cursor-pointer transition-all duration-300'>{tab.title}</span>
+                                    <span key={index} onClick={() => handleTabClick(tab.title)}
+                                    className={`rounded-full px-6 py-2 text-center cursor-pointer transition-all duration-300 ${
+                                      activeTab === tab.title
+                                        ? 'bg-default-gold text-white' // Active tab styles
+                                        : 'bg-theme-gray hover:bg-default-gold hover:text-white' // Inactive tab styles
+                                    }`}
+                                  >{tab.title}</span>
                                 ))}
                             </div>
                         </div>
                         <div className="products-section col-span-12">
                             <div className="products-list my-16">
-                                <div className="grid grid-cols-4 gap-5">
+                                <div className="grid grid-cols-4 gap-5 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
                                     {currentTab.content.map((product) =>(
-                                        <div key={product.id} className="product-box bg-white rounded-lg relative hover:shadow-custom-shadow transition-shadow duration-300">
+                                        <div key={product.id} className="product-box bg-white rounded-lg relative hover:shadow-custom-shadow transition-shadow duration-300 border border-default-gold">
                                             <div className="product-image overflow-hidden rounded-tl-lg rounded-tr-xl">
-                                                <img src={product.image} alt="fruite-item-5" className='hover:scale-120 max-w-full transition-all duration-300'/>
+                                                <img src={product.image} alt="fruite-item-5" className='hover:scale-120 max-w-full transition-all duration-300 w-full'/>
                                                 <div className="category text-white bg-default-gold px-4 py-1 absolute top-5 left-5 rounded-xl">{product.category}</div>
                                             </div>
-                                            <div className="products-description text-center border border-t-0 border-default-gold p-5 rounded-bl-xl rounded-br-xl">
+                                            <div className="products-description text-center p-5 rounded-bl-xl rounded-br-xl">
                                                 <h4 className='text-2xl font-semibold'>{product.title}</h4>
                                                 <p className='text-gray-600 py-5'>{product.description}</p>
                                                 <div className="price-add-cart text-left flex gap-3 justify-between items-center">
