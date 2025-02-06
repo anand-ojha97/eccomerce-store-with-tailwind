@@ -58,7 +58,7 @@ const VegitableShop = () => {
           <div className="main-heading">
             <h2 className="text-4xl font-semibold">Fresh Organic Vegetables</h2>
           </div>
-          <div className="veitablelslides">
+          <div className="veitablelslides -mx-4">
             <div className="product-box bg-white rounded-lg relative hover:shadow-custom-shadow transition-shadow duration-300 border border-default-green">
               <div className="product-image overflow-hidden rounded-tl-lg rounded-tr-xl">
                 <img

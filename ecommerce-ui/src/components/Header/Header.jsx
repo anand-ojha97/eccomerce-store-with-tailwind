@@ -70,7 +70,7 @@ const toggleMenu = () =>{
                     </div>
                 </div>
                 <div className="account flex gap-3 items-center">
-                        <div className="circle rounded-full pl-3 pr-3 p-2 border border-default-gold hover:bg-default-gold">
+                        <div className="circle rounded-full pl-3 pr-3 p-2 border border-default-gold hover:bg-default-gold duration-300 cursor-pointer transition-all">
                             <FontAwesomeIcon icon={faSearch} size='1x' color="#81c408" />
                         </div>
                         <FontAwesomeIcon icon={faBagShopping}  size='2x' color="#81c408" />

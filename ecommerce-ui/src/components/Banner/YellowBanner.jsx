@@ -3,13 +3,13 @@ import React from 'react'
 const YellowBanner = () => {
   return (
     <>
-        <div className="bannersection py-10 bg-default-gold">
+        <div className="bannersection py-12 bg-default-gold">
             <div className="container mx-auto px-4">
-                <div className="grid grid-cols-2 items-center">
-                    <div className="banner-content">
-                        <h5 className='text-6xl text-white font-semibold'>Fresh Exotic Fruits<span className='text-gray-600 font-medium my-8 block'>in Our Store</span></h5>
+                <div className="grid grid-cols-2 items-center sm:grid-cols-1 gap-y-8">
+                    <div className="banner-content pr-14 md:p-0">
+                        <h5 className='text-6xl text-white font-semibold sm:text-5xl'>Fresh Exotic Fruits<span className='text-gray-600 font-medium my-8 block'>in Our Store</span></h5>
                         <p className='text-gray-600'>The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc.</p>
-                        <a href="#" className='mt-10 px-10 font-semibold py-3 inline-block uppercase border-2 border-white rounded-full'>Buy</a>
+                        <a href="#" className='mt-10 px-10 font-semibold py-3 inline-block uppercase border-2 border-white rounded-full hover:bg-default-green duration-300 ease-in-out'>Buy</a>
                     </div>
                     <div className="banner-poster relative">
                         <img src="src//images/baner-1.png" alt="baner" className='w-full'/>

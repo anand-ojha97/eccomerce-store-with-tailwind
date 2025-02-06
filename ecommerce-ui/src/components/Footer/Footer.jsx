@@ -28,7 +28,7 @@ const Footer = () => {
                 <div className="readmoreCol">
                   <h2 className='text-white text-2xl mb-6'>Why People Like us!</h2>
                   <p className='text-gray-400 leading-loose text-lg'>typesetting, remaining essentially unchanged. It was popularised in the 1960s with the like Aldus PageMaker including of Lorem Ipsum.</p>
-                  <a href="#" className='capitalize py-3 px-6 border border-default-gold inline-block rounded-full text-default-green font-semibold mt-8 hover:bg-default-gold hover:text-white'>read more</a>
+                  <a href="#" className='capitalize py-3 px-6 border duration-300 transition-all border-default-gold inline-block rounded-full text-default-green font-semibold mt-8 hover:bg-default-gold hover:text-white'>read more</a>
                 </div>
               </div> 
               <div className="col-span-3 pl-6 sm:p-0">
@@ -48,12 +48,12 @@ const Footer = () => {
               <div className="shop-info">
                   <h2 className='text-white text-2xl mb-8 sm:mb-4'>Account</h2>
                   <ul className="footermenuItems">
-                    <li><a href="#" className='text-white text-lg pb-1 block'>About Us</a></li>
-                    <li><a href="#" className='text-white text-lg pb-1 block'>Contact Us</a></li>
+                    <li><a href="#" className='text-white text-lg pb-1 block'>My Account</a></li>
                     <li><a href="#" className='text-white text-lg pb-1 block'>Privacy Policy</a></li>
-                    <li><a href="#" className='text-white text-lg pb-1 block'>Terms & Condition</a></li>
-                    <li><a href="#" className='text-white text-lg pb-1 block'>Return Policy</a></li>
-                    <li><a href="#" className='text-white text-lg pb-1 block'>FAQs & Help</a></li>
+                    <li><a href="#" className='text-white text-lg pb-1 block'>Shopping Cart</a></li>
+                    <li><a href="#" className='text-white text-lg pb-1 block'>Wishlist</a></li>
+                    <li><a href="#" className='text-white text-lg pb-1 block'>Order History</a></li>
+                    <li><a href="#" className='text-white text-lg pb-1 block'>International Orders</a></li>
                   </ul>
                 </div>
               </div>
@@ -72,6 +72,9 @@ const Footer = () => {
                   <div className="adress text-gray-400 pb-3 text-lg">
                     <span>Payment Accepted</span>
                   </div>
+                </div>
+                <div className="payment">
+                  <img src="src/images/payment.png" alt="paymnet" className='w-[70%] mt-3'/>
                 </div>
               </div>
             </div>
