@@ -28,7 +28,7 @@ const Fact = () => {
     ]
     return (
         <>
-            <div className="fact-section py-32 md:py-8">
+            <div className="fact-section py-20 md:py-8">
                 <div className="container mx-auto px-4">
                     <div className="bg-theme-gray p-12 rounded-xl sm:p-8">
                         <div className="grid grid-cols-4 gap-10 sm:grid-cols-1 md:grid-cols-2">

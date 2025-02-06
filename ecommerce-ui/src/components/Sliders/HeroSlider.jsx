@@ -3,6 +3,7 @@ import $ from 'jquery'; // Import jQuery
 import 'slick-carousel/slick/slick.css'; 
 import 'slick-carousel/slick/slick-theme.css'; 
 import "slick-carousel"; // Import slick-carousel JavaScript
+import { Link } from 'react-router-dom';
 
 const BannerSlider = () => {
   useEffect(() => {
@@ -30,13 +31,13 @@ const BannerSlider = () => {
             <div className="slider">
                 <div className="image-section bg-default-gold rounded-md relative">
                     <img src="src/images/Vesitables.jpg" alt="Fruites" className='rounded-md w-full'/>
-                    <a href="#" className="px-4 py-2 text-white text-2xl rounded-md font-semibold absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-gold-gradient">Vesitables</a>
+                    <Link to="/" className="px-4 py-2 text-white text-2xl rounded-md font-semibold absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-gold-gradient">Vesitables</Link>
                 </div>
             </div>
             <div className="slider">
                 <div className="image-section bg-default-gold rounded-md relative">
                     <img src="src/images/Fruites.png" alt="Fruites" className='rounded-md w-full'/>
-                    <a href="#" className="px-4 py-2 text-white text-2xl rounded-md font-semibold absolute abso top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-gold-gradient">Fruits</a>
+                    <Link to="/" className="px-4 py-2 text-white text-2xl rounded-md font-semibold absolute abso top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-gold-gradient">Fruits</Link>
                 </div>
             </div>
         </div>

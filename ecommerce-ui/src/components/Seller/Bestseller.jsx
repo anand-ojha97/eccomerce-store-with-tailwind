@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faLock } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Bestseller = () => {
   const [rating, SetRating] = useState(4);
@@ -75,13 +76,13 @@ const Bestseller = () => {
                 <span className="price text-2xl font-semibold block mb-3">
                   {selleritem.price}
                 </span>
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   className="rounded-full border border-default-gold px-3 py-2 inline-block hover:bg-default-gold text-default-green hover:text-white ease-linear duration-200"
                 >
                   <FontAwesomeIcon icon={faLock} color="#81c408" />
                   <span className="pl-3 font-semibold">Add to cart</span>
-                </a>
+                </Link>
               </div>
             </div>
             ))}
@@ -105,13 +106,13 @@ const Bestseller = () => {
                   <span className="price text-2xl font-semibold block mb-3">
                     {selleritem.price}
                   </span>
-                  <a
-                    href="#"
+                  <Link
+                    to="/"
                     className="rounded-full border border-default-gold px-3 py-2 inline-block hover:bg-default-gold text-default-green hover:text-white ease-linear duration-200"
                   >
                     <FontAwesomeIcon icon={faLock} color="#81c408" />
                     <span className="pl-3 font-semibold">Add to cart</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}

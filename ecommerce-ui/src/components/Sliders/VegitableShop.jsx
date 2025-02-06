@@ -3,6 +3,7 @@ import $ from 'jquery'; // Import jQuery
 import 'slick-carousel/slick/slick.css'; 
 import 'slick-carousel/slick/slick-theme.css'; 
 import "slick-carousel"; // Import slick-carousel JavaScript
+import { Link } from 'react-router-dom';
 
 const VegitableShop = () => {
     useEffect(() => {
@@ -78,14 +79,14 @@ const VegitableShop = () => {
                 </p>
                 <div className="price-add-cart text-left flex gap-3 justify-between items-center">
                   <span className="font-semibold text-xl">$4.99 / loaf</span>
-                  <a
-                    href="#"
+                  <Link
+                    to="/"
                     className="rounded-full border border-default-green px-3 py-2"
                   >
                     <span className="pl-3 font-semibold text-default-green">
                       Add to cart
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -108,15 +109,14 @@ const VegitableShop = () => {
                 </p>
                 <div className="price-add-cart text-left flex gap-3 justify-between items-center">
                   <span className="font-semibold text-xl">$4.99 / loaf</span>
-                  <a
-                    href="#"
+                  <Link
+                    to="/"
                     className="rounded-full border border-default-green px-3 py-2"
                   >
-                    
                     <span className="pl-3 font-semibold text-default-green">
                       Add to cart
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -139,14 +139,14 @@ const VegitableShop = () => {
                 </p>
                 <div className="price-add-cart text-left flex gap-3 justify-between items-center">
                   <span className="font-semibold text-xl">$4.99 / loaf</span>
-                  <a
-                    href="#"
+                  <Link
+                    to="/"
                     className="rounded-full border border-default-green px-3 py-2"
                   >
                     <span className="pl-3 font-semibold text-default-green">
                       Add to cart
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -169,14 +169,14 @@ const VegitableShop = () => {
                 </p>
                 <div className="price-add-cart text-left flex gap-3 justify-between items-center">
                   <span className="font-semibold text-xl">$4.99 / loaf</span>
-                  <a
-                    href="#"
+                  <Link
+                    to="/"
                     className="rounded-full border border-default-green px-3 py-2"
                   >
                     <span className="pl-3 font-semibold text-default-green">
                       Add to cart
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -199,14 +199,14 @@ const VegitableShop = () => {
                 </p>
                 <div className="price-add-cart text-left flex gap-3 justify-between items-center">
                   <span className="font-semibold text-xl">$4.99 / loaf</span>
-                  <a
-                    href="#"
+                  <Link
+                    to="/"
                     className="rounded-full border border-default-green px-3 py-2"
                   >
                     <span className="pl-3 font-semibold text-default-green">
                       Add to cart
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -229,14 +229,14 @@ const VegitableShop = () => {
                 </p>
                 <div className="price-add-cart text-left flex gap-3 justify-between items-center">
                   <span className="font-semibold text-xl">$4.99 / loaf</span>
-                  <a
-                    href="#"
+                  <Link
+                    to="/"
                     className="rounded-full border border-default-green px-3 py-2"
                   >
                     <span className="pl-3 font-semibold text-default-green">
                       Add to cart
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

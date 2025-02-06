@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLock } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 const FruitShop = () => {
   const tabs = [
     {
@@ -196,15 +197,15 @@ const FruitShop = () => {
                           <span className="font-semibold text-xl">
                             {product.price}
                           </span>
-                          <a
-                            href="#"
+                          <Link
+                            to ="/"
                             className="rounded-full border border-default-gold px-3 py-2"
                           >
                             <FontAwesomeIcon icon={faLock} color="#81c408" />
                             <span className="pl-3 font-semibold text-default-green">
                               Add to cart
                             </span>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>

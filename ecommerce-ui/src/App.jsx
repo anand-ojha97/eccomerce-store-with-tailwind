@@ -1,3 +1,6 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import HeroBanner from "./components/Banner/HeroBanner";
 import YellowBanner from "./components/Banner/YellowBanner";
 import Fact from "./components/Fact/Fact";
@@ -9,23 +12,21 @@ import Header from "./components/Header/Header";
 import Bestseller from "./components/Seller/Bestseller";
 import Testimonial from "./components/Sliders/Testimonial";
 import VegitableShop from "./components/Sliders/VegitableShop";
+import Contact from "./pages/contact";
+import Home from './pages/Home';
 
 function App() {
   return (
-    <>
+    <Router>
       <Header />
-      <HeroBanner />
-      <HomeFeatures />
-      <FruitShop />
-      <DiscountFeatures />
-      <VegitableShop />
-      <YellowBanner />
-      <Bestseller />
-      <Fact />
-      <Testimonial />
+      {/* Define your routes here */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <Footer />
-    </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;

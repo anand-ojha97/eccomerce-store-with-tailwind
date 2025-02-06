@@ -1,6 +1,7 @@
 import React from 'react'
 import { faTwitter, faYoutube, faFacebookF, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';  // Import Link
 
 const Footer = () => {
   return (
@@ -16,10 +17,18 @@ const Footer = () => {
                 <button type="submit" className='bg-default-green hover:bg-default-gold rounded-full text-white font-semibold p-4 w-[25%] -m-16 sm:w-[45%] sm:-m-12 md:w-[45%] lg:w-[35%] lg:-m-24'>Subscribe Now</button>
             </div> 
             <div className="footerSocialLinks col-span-3 text-right sm:text-center md:flex">
-              <a href="#" className="twiter border border-default-gold px-3 py-2 rounded-full mr-2 sm:inline-block"><FontAwesomeIcon icon={faTwitter}  color='#FFB524' /></a>
-              <a href="#" className="twiter border border-default-gold px-3 py-2 rounded-full mr-2 sm:inline-block"><FontAwesomeIcon icon={faYoutube}  color='#FFB524' /></a>
-              <a href="#" className="twiter border border-default-gold px-3 py-2 rounded-full mr-2 sm:inline-block"><FontAwesomeIcon icon={faFacebookF} color='#FFB524' /></a>
-              <a href="#" className="twiter border border-default-gold px-3 py-2 rounded-full sm:inline-block"><FontAwesomeIcon icon={faLinkedin}  color='#FFB524' /></a>
+              <Link to="#" className="twiter border border-default-gold px-3 py-2 rounded-full mr-2 sm:inline-block">
+                <FontAwesomeIcon icon={faTwitter} color='#FFB524' />
+              </Link>
+              <Link to="#" className="twiter border border-default-gold px-3 py-2 rounded-full mr-2 sm:inline-block">
+                <FontAwesomeIcon icon={faYoutube} color='#FFB524' />
+              </Link>
+              <Link to="#" className="twiter border border-default-gold px-3 py-2 rounded-full mr-2 sm:inline-block">
+                <FontAwesomeIcon icon={faFacebookF} color='#FFB524' />
+              </Link>
+              <Link to="#" className="twiter border border-default-gold px-3 py-2 rounded-full sm:inline-block">
+                <FontAwesomeIcon icon={faLinkedin} color='#FFB524' />
+              </Link>
             </div>
           </div>
           <div className="footerBottomUrls pt-6">
@@ -28,19 +37,19 @@ const Footer = () => {
                 <div className="readmoreCol">
                   <h2 className='text-white text-2xl mb-6'>Why People Like us!</h2>
                   <p className='text-gray-400 leading-loose text-lg'>typesetting, remaining essentially unchanged. It was popularised in the 1960s with the like Aldus PageMaker including of Lorem Ipsum.</p>
-                  <a href="#" className='capitalize py-3 px-6 border duration-300 transition-all border-default-gold inline-block rounded-full text-default-green font-semibold mt-8 hover:bg-default-gold hover:text-white'>read more</a>
+                  <Link to="#" className='capitalize py-3 px-6 border duration-300 transition-all border-default-gold inline-block rounded-full text-default-green font-semibold mt-8 hover:bg-default-gold hover:text-white'>read more</Link>
                 </div>
               </div> 
               <div className="col-span-3 pl-6 sm:p-0">
                 <div className="shop-info">
                   <h2 className='text-white text-2xl mb-8 sm:mb-4'>Shop Info</h2>
                   <ul className="footermenuItems">
-                    <li><a href="#" className='text-white text-lg pb-1 block'>About Us</a></li>
-                    <li><a href="#" className='text-white text-lg pb-1 block'>Contact Us</a></li>
-                    <li><a href="#" className='text-white text-lg pb-1 block'>Privacy Policy</a></li>
-                    <li><a href="#" className='text-white text-lg pb-1 block'>Terms & Condition</a></li>
-                    <li><a href="#" className='text-white text-lg pb-1 block'>Return Policy</a></li>
-                    <li><a href="#" className='text-white text-lg pb-1 block'>FAQs & Help</a></li>
+                    <li><Link to="#" className='text-white text-lg pb-1 block'>About Us</Link></li>
+                    <li><Link to="#" className='text-white text-lg pb-1 block'>Contact Us</Link></li>
+                    <li><Link to="#" className='text-white text-lg pb-1 block'>Privacy Policy</Link></li>
+                    <li><Link to="#" className='text-white text-lg pb-1 block'>Terms & Condition</Link></li>
+                    <li><Link to="#" className='text-white text-lg pb-1 block'>Return Policy</Link></li>
+                    <li><Link to="#" className='text-white text-lg pb-1 block'>FAQs & Help</Link></li>
                   </ul>
                 </div>
               </div>
@@ -48,12 +57,12 @@ const Footer = () => {
               <div className="shop-info">
                   <h2 className='text-white text-2xl mb-8 sm:mb-4'>Account</h2>
                   <ul className="footermenuItems">
-                    <li><a href="#" className='text-white text-lg pb-1 block'>My Account</a></li>
-                    <li><a href="#" className='text-white text-lg pb-1 block'>Privacy Policy</a></li>
-                    <li><a href="#" className='text-white text-lg pb-1 block'>Shopping Cart</a></li>
-                    <li><a href="#" className='text-white text-lg pb-1 block'>Wishlist</a></li>
-                    <li><a href="#" className='text-white text-lg pb-1 block'>Order History</a></li>
-                    <li><a href="#" className='text-white text-lg pb-1 block'>International Orders</a></li>
+                    <li><Link to="#" className='text-white text-lg pb-1 block'>My Account</Link></li>
+                    <li><Link to="#" className='text-white text-lg pb-1 block'>Privacy Policy</Link></li>
+                    <li><Link to="#" className='text-white text-lg pb-1 block'>Shopping Cart</Link></li>
+                    <li><Link to="#" className='text-white text-lg pb-1 block'>Wishlist</Link></li>
+                    <li><Link to="#" className='text-white text-lg pb-1 block'>Order History</Link></li>
+                    <li><Link to="#" className='text-white text-lg pb-1 block'>International Orders</Link></li>
                   </ul>
                 </div>
               </div>
@@ -61,13 +70,13 @@ const Footer = () => {
                 <div className="contactsection">
                   <h2 className='text-white text-2xl mb-8 sm:mb-4'>Contact</h2>
                   <div className="adress text-gray-400 pb-3 text-lg">
-                    <span>Address </span><a href="#">1429 Netus Rd, NY 48247</a>
+                    <span>Address </span><Link to="#">1429 Netus Rd, NY 48247</Link>
                   </div>
                   <div className="adress text-gray-400 pb-3 text-lg">
-                    <span>Email: </span><a href="#">Example@gmail.com</a>
+                    <span>Email: </span><Link to="#">Example@gmail.com</Link>
                   </div>
                   <div className="adress text-gray-400 pb-3 text-lg">
-                    <span>Phone: </span><a href="#"> +0123 4567 8910</a>
+                    <span>Phone: </span><Link to="#"> +0123 4567 8910</Link>
                   </div>
                   <div className="adress text-gray-400 pb-3 text-lg">
                     <span>Payment Accepted</span>
@@ -84,4 +93,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer;
