@@ -2,6 +2,7 @@ import React from 'react'
 import Breadcumbs from '../components/Breadcumbs/Breadcumbs'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faMapMarkerAlt, faPhone, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
+import ContactForm from '../components/Form/ContactForm'
 
 const Contact = () => {
     return (
@@ -19,12 +20,7 @@ const Contact = () => {
             </div>
             <div className="grid grid-cols-12 gap-6 sm:block">
                 <div className="form-section col-span-7">
-                    <form action="" className='w-full'>
-                      <input type="text" placeholder='Your Name' name="name" className='bg-white p-3 rounded-lg focus:shadow-form-shadow outline-none w-full mb-6'/>
-                      <input type="email" placeholder='Your Email' name='email' className='bg-white p-3 rounded-lg focus:shadow-form-shadow outline-none w-full mb-6'/>
-                      <textarea name="message" placeholder="Your Message" id="message" rows={5} cols={10} className='bg-white p-3 rounded-lg focus:shadow-form-shadow outline-none w-full mb-6'></textarea>
-                      <button className='bg-white border border-default-gold p-4 rounded-xl w-full text-default-green font-semibold hover:text-white hover:bg-default-gold duration-300 transition-all'>Submit</button>
-                    </form>
+                    <ContactForm />
                 </div>
                 <div className="contact-details col-span-5 sm:mt-10">
                     <div className="bg-white rounded-xl p-5 mb-10">
