@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { faSearch, faUser, faBagShopping, faEnvelope, faLocationPin, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faUser, faBagShopping, faEnvelope, faLocationPin, faBars, faMarker, faMapMarker, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
@@ -10,14 +10,14 @@ const Header = () => {
   };
 
   return (
-    <div className="header-section bg-white pb-2 shadow-2xl sticky top-[-65px] z-50 sm:top-0 transition-all duration-300 ease-in-out">
+    <div className="header-section bg-white pb-2 md:top-0 shadow-2xl sticky top-[-65px] z-50 sm:top-0 transition-all duration-300 ease-in-out">
       <div className="container mx-auto px-4">
-        <div className="topbar bg-default-green p-5 rounded-tl-[100px] rounded-br-[100px] rounded-bl-[40px] rounded-tr-[40px] sm:pt-7 sm:rounded-tl-[100px] sm:rounded-br-[100px] sm:hidden">
+        <div className="md:hidden topbar bg-default-green p-5 rounded-tl-[100px] rounded-br-[100px] rounded-bl-[40px] rounded-tr-[40px] sm:pt-7 sm:rounded-tl-[100px] sm:rounded-br-[100px] sm:hidden">
           <div className="topbar-row flex items-center justify-between px-4 sm:block">
             <div className="contact-info text-center">
               <div className="email flex gap-4 sm:block sm:w-full sm:pb-4">
                 <Link to="" target="_blank" rel="noopener noreferrer" className='text-white sm:block'>
-                  <FontAwesomeIcon icon={faLocationPin} color='#ffb524' /> 123 Street, New York
+                  <FontAwesomeIcon icon={faMapMarkerAlt} color='#ffb524' /> 123 Street, New York
                 </Link>
                 <Link to="mailto:Email@Example.com" className='text-white'>
                   <FontAwesomeIcon icon={faEnvelope} color='#ffb524' /> Email@Example.com
