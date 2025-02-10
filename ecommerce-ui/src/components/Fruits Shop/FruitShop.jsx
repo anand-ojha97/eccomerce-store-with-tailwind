@@ -198,11 +198,11 @@ const FruitShop = () => {
                             {product.price}
                           </span>
                           <Link
-                            to ="/"
-                            className="rounded-full border border-default-gold px-3 py-2"
+                            to="/"
+                            className="rounded-full border border-default-gold px-3 py-2 hover:bg-default-gold duration-300 transition-all text-default-green  hover:text-white"
                           >
                             <FontAwesomeIcon icon={faLock} color="#81c408" />
-                            <span className="pl-3 font-semibold text-default-green">
+                            <span className="pl-3 font-semibold">
                               Add to cart
                             </span>
                           </Link>
