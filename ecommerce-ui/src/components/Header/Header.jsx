@@ -53,8 +53,10 @@ const Header = () => {
                 <li className="group relative sm:p-2">
                   <Link to="#">Pages</Link>
                   <ul className="absolute left-0 hidden group-hover:block bg-gray-200 shadow-md max-h-0 group-hover:max-h-40 transition-all duration-300 overflow-hidden p-5 rounded-md ">
-                    <li className='hover:bg-default-gold hover:text-default-green'><Link to="#">Cart</Link></li>
-                    <li className='hover:bg-default-gold hover:text-default-green'><Link to="#">Checkout</Link></li>
+                    <li className='hover:bg-default-gold hover:text-default-green px-5 py-1'><Link to="/cart">Cart</Link></li>
+                    <li className='hover:bg-default-gold hover:text-default-green px-5 py-1'><Link to="/checkout">Checkout</Link></li>
+                    <li className='hover:bg-default-gold hover:text-default-green px-5 py-1'><Link to="/testimonial">Testimonial</Link></li>
+                    <li className='hover:bg-default-gold hover:text-default-green px-5 py-1'><Link to="/404">404 Page</Link></li>
                   </ul>
                 </li>
                 <li className='sm:p-2'><Link to="/contact">Contact us</Link></li>
@@ -68,10 +70,10 @@ const Header = () => {
                 <li className="group relative">
                   <Link to="#">Pages</Link>
                   <ul className="absolute left-0 hidden group-hover:block bg-gray-200 shadow-md max-h-0 group-hover:max-h-40 transition-all duration-300 overflow-hidden rounded-md">
-                    <li className='hover:bg-default-gold hover:text-default-green px-5 py-1'><Link to="#">Cart</Link></li>
-                    <li className='hover:bg-default-gold hover:text-default-green px-5 py-1'><Link to="#">Checkout</Link></li>
-                    <li className='hover:bg-default-gold hover:text-default-green px-5 py-1'><Link to="#">Testimonial</Link></li>
-                    <li className='hover:bg-default-gold hover:text-default-green px-5 py-1'><Link to="#">404 Page</Link></li>
+                    <li className='hover:bg-default-gold hover:text-default-green px-5 py-1'><Link to="/cart">Cart</Link></li>
+                    <li className='hover:bg-default-gold hover:text-default-green px-5 py-1'><Link to="/checkout">Checkout</Link></li>
+                    <li className='hover:bg-default-gold hover:text-default-green px-5 py-1'><Link to="/testimonial">Testimonial</Link></li>
+                    <li className='hover:bg-default-gold hover:text-default-green px-5 py-1'><Link to="/404">404 Page</Link></li>
                   </ul>
                 </li>
                 <li><Link to="/contact">Contact us</Link></li>

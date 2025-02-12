@@ -120,8 +120,8 @@ const CategorySidebar = () => {
                 <div className="banner-section-sidebar">
                     <div className="banner-img relative">
                         <img src="src/images/banner-fruits.jpg" alt="banner-fruits" className='rounded-xl w-full'/>
-                        <div className="absolute top-40 right-2">
-                            <h3 className='text-default-gold font-bold text-3xl'>Fresh <br/>Fruits <br/>Banner</h3>
+                        <div className="absolute top-40 right-2 lg:top-28 md:top-64 sm:top-40">
+                            <h3 className='text-default-gold font-bold text-3xl md:text-5xl'>Fresh <br/>Fruits <br/>Banner</h3>
                         </div>
                     </div>
                 </div>

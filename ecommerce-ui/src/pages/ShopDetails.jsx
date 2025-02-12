@@ -17,10 +17,10 @@ const ShopDetails = () => {
       <Breadcumbs />
       <div className="single-page py-32">
         <div className="container px-4 mx-auto">
-          <div className="grid grid-cols-12 gap-x-10">
+          <div className="grid grid-cols-12 gap-x-10 md:block lg:gap-x-5">
             <div className="single-product-details col-span-9">
-              <div className="grid grid-cols-2 items-start">
-                <div className="product-img rounded-lg overflow-hidden border border-gray-300 mr-5">
+              <div className="grid grid-cols-2 items-start sm:block">
+                <div className="product-img rounded-lg overflow-hidden border border-gray-300 mr-5 sm:mr-0 sm:mb-5">
                   <img
                     src="src/images/featur-3.jpg"
                     alt="single-prrdcut-img"
@@ -56,7 +56,7 @@ const ShopDetails = () => {
                       name="quantityInput"
                       id="quantityInput"
                       defaultValue={1}
-                      className="w-[5%] pr-2 pl-2 mx-2"
+                      className="w-[5%] pr-2 pl-2 mx-2 lg:w-[10%] text-center"
                     />
                     <button className="minus-btn px-2 py-1 rounded-full bg-theme-gray text-sm">
                       <FontAwesomeIcon icon={faPlus} />
