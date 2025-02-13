@@ -10,21 +10,21 @@ const Header = () => {
   };
 
   return (
-    <div className="header-section bg-white pb-2 md:top-0 shadow-2xl sticky top-[-65px] z-50 sm:top-0 transition-all duration-300 ease-in-out">
+    <div className="header-section bg-white pb-2 md:top-0 shadow-2xl sticky top-[-55px] z-50 sm:top-0 transition-all duration-300 ease-in-out">
       <div className="container mx-auto px-4">
-        <div className="md:hidden topbar bg-default-green p-5 rounded-tl-[100px] rounded-br-[100px] rounded-bl-[40px] rounded-tr-[40px] sm:pt-7 sm:rounded-tl-[100px] sm:rounded-br-[100px] sm:hidden">
+        <div className="md:hidden topbar bg-default-green p-4 rounded-tl-[100px] rounded-br-[100px] rounded-bl-[40px] rounded-tr-[40px] sm:pt-7 sm:rounded-tl-[100px] sm:rounded-br-[100px] sm:hidden">
           <div className="topbar-row flex items-center justify-between px-4 sm:block">
             <div className="contact-info text-center">
               <div className="email flex gap-4 sm:block sm:w-full sm:pb-4">
-                <Link to="" target="_blank" rel="noopener noreferrer" className='text-white sm:block'>
+                <Link to="" target="_blank" rel="noopener noreferrer" className='text-white sm:block text-sm'>
                   <FontAwesomeIcon icon={faMapMarkerAlt} color='#ffb524' /> 123 Street, New York
                 </Link>
-                <Link to="mailto:Email@Example.com" className='text-white'>
+                <Link to="mailto:Email@Example.com" className='text-white text-sm'>
                   <FontAwesomeIcon icon={faEnvelope} color='#ffb524' /> Email@Example.com
                 </Link>
               </div>
             </div>
-            <div className="breadcumbs">
+            <div className="breadcumbs text-sm">
               <Link to="#" className='text-white mr-2'>Privacy Policy / </Link>
               <Link to="#" className='text-white mr-2'>Terms of Use / </Link>
               <Link to="#" className='text-white'>Sales and Refunds</Link>
@@ -80,11 +80,14 @@ const Header = () => {
               </ul>
             </div>
           </div>
-          <div className="account flex gap-3 items-center">
+          <div className="account flex gap-5 items-center md:gap-2">
             <div className="circle rounded-full pl-3 pr-3 p-2 border border-default-gold hover:bg-default-gold duration-300 cursor-pointer transition-all">
               <FontAwesomeIcon icon={faSearch} size='1x' color="#81c408" />
             </div>
-            <FontAwesomeIcon icon={faBagShopping} size='2x' color="#81c408" />
+            <div className="products-count relative mr-2">
+              <FontAwesomeIcon icon={faBagShopping} size='2x' color="#81c408" />
+              <span className='count absolute px-2 left-4 bottom-4 bg-default-gold rounded-full'>3</span>
+            </div>
             <FontAwesomeIcon icon={faUser} size='2x' color="#81c408" />
           </div>
         </div>
