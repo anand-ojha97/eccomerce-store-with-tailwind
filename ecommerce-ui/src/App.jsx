@@ -8,7 +8,7 @@ import Shop from './pages/Shop';
 import ShopDetails from './pages/ShopDetails';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
-import Testimonialpage from './pages/Testimonialpage';
+import Testimonial from './pages/Testimonial';
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         <Route path='/shop-details' element={<ShopDetails />} />
         <Route path='/cart' element={<Cart />} />
         <Route path='/checkout' element={<Checkout />} /> 
-        <Route path='/testimonial' element={<Testimonialpage />} />
+        <Route path='/testimonial' element={<Testimonial />} />
       </Routes>
       <Footer />
     </Router>

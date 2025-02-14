@@ -8,7 +8,7 @@ const CategorySidebar = () => {
     const handleRangeChange = (e) =>{
         const value = e.target.value;
         SetPrice(value)
-    }
+    }   
     return (
         <>
             <div className="category-sidebar-section">

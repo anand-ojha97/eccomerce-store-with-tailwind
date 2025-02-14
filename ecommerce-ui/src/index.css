@@ -51,3 +51,8 @@
     left: auto;
     right: 70px;
 }
+
+  .twitter:hover .social-icon path {
+    fill: black; 
+  }
+  

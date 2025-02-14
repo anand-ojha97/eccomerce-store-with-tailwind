@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css'; 
 import "slick-carousel"; // Import slick-carousel JavaScript
 
-const Testimonial = () => {
+const Reviews = () => {
     useEffect(() => {
         // Initialize the slick slider when the component mounts
         $('.testimonial-slider').slick({
@@ -112,4 +112,4 @@ const Testimonial = () => {
     )
 }
 
-export default Testimonial
+export default Reviews
