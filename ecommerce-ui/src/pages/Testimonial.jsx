@@ -1,15 +1,16 @@
 import React from 'react'
-import Testimonial from '../components/Sliders/Testimonial'
+import TestimonialSlider from '../components/Sliders/Reviews'
 import Breadcumbs from '../components/Breadcumbs/Breadcumbs'
-const Testimonialpage = () => {
+
+const Testimonial = () => {
   return (
     <>
     <Breadcumbs />
     <div className='py-12'>
-      <Testimonial />
+      <TestimonialSlider />
     </div>
     </>
   )
 }
 
-export default Testimonialpage
+export default Testimonial
